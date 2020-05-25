@@ -1,3 +1,5 @@
+A music app made with Javascript using ReactJS and Material-Ui
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
