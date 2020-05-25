@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-music/static/css/main.6ce9f6d1.chunk.css",
+    "main.js": "/react-music/static/js/main.db29590d.chunk.js",
+    "main.js.map": "/react-music/static/js/main.db29590d.chunk.js.map",
+    "runtime-main.js": "/react-music/static/js/runtime-main.4c22a148.js",
+    "runtime-main.js.map": "/react-music/static/js/runtime-main.4c22a148.js.map",
+    "static/js/2.c72c0b02.chunk.js": "/react-music/static/js/2.c72c0b02.chunk.js",
+    "static/js/2.c72c0b02.chunk.js.map": "/react-music/static/js/2.c72c0b02.chunk.js.map",
+    "index.html": "/react-music/index.html",
+    "precache-manifest.44e08ea08556ca190714e32b396dfa1a.js": "/react-music/precache-manifest.44e08ea08556ca190714e32b396dfa1a.js",
+    "service-worker.js": "/react-music/service-worker.js",
+    "static/css/main.6ce9f6d1.chunk.css.map": "/react-music/static/css/main.6ce9f6d1.chunk.css.map",
+    "static/js/2.c72c0b02.chunk.js.LICENSE.txt": "/react-music/static/js/2.c72c0b02.chunk.js.LICENSE.txt",
+    "static/media/favicon.png": "/react-music/static/media/favicon.e99f649c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c22a148.js",
+    "static/js/2.c72c0b02.chunk.js",
+    "static/css/main.6ce9f6d1.chunk.css",
+    "static/js/main.db29590d.chunk.js"
+  ]
+}
