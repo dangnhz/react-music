@@ -1,0 +1,13 @@
+@import '../../assets/style/setting.scss';
+
+.category-title {
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+.video-list {
+  margin: 1rem;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

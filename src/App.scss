@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: none !important;
+  // position: fixed;
+  overscroll-behavior: none !important;
+  -ms-overflow-style: none;
+  overscroll-behavior: none;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0 !important;
+    display: none;
+  }
+}
+
+.App {
+  width: 100%;
+  position: relative;
+}

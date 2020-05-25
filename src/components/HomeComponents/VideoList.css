@@ -1,0 +1,17 @@
+/* iPads (portrait and landscape) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+.category-title {
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+.video-list {
+  margin: 1rem;
+  scrollbar-width: none;
+}
+
+.video-list::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=VideoList.css.map */

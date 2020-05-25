@@ -1,0 +1,35 @@
+/* iPads (portrait and landscape) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+.video-card {
+  max-width: 345px;
+  margin-right: 1rem;
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.video-card .video-title,
+.video-card .channel-title {
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+  overflow: hidden;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .video-card .video-title {
+    font-size: 1rem;
+  }
+  .video-card .channel-title {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .video-card .video-title {
+    font-size: 1.2rem;
+  }
+  .video-card .channel-title {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=VideoCard.css.map */

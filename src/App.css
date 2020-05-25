@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scrollbar-width: none !important;
+  overscroll-behavior: none !important;
+  -ms-overflow-style: none;
+  overscroll-behavior: none;
+}
+
+html::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0 !important;
+  display: none;
+}
+
+.App {
+  width: 100%;
+  position: relative;
+}
+/*# sourceMappingURL=App.css.map */

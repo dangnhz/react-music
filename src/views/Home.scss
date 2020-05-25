@@ -1,0 +1,12 @@
+.home-container {
+  height: auto;
+  padding: 100px 0 110px 0;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+  }
+}

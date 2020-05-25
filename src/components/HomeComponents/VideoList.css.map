@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACEA,gDAAgD;AAGhD,sCAAsC;AAGtC,+BAA+B;ADN/B,AAAA,eAAe,CAAC;EACd,cAAc,EAAE,SAAS;EACzB,OAAO,EAAE,MAAM;CAChB;;AACD,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,IAAI;EACZ,eAAe,EAAE,IAAI;CAItB;;AAND,AAGE,WAHS,AAGR,mBAAmB,CAAC;EACnB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "VideoList.scss",
+        "../../assets/style/setting.scss"
+    ],
+    "names": [],
+    "file": "VideoList.css"
+}

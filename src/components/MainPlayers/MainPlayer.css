@@ -1,0 +1,352 @@
+/* iPads (portrait and landscape) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+#main-player {
+  position: fixed !important;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: margin 0.3s, height 0.3s;
+  transition: margin 0.3s, height 0.3s;
+  scrollbar-width: 0;
+}
+
+#main-player::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+
+#main-player.maximize {
+  color: #e91d63;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  background: white;
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+}
+
+#main-player.maximize .top-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 1rem;
+}
+
+#main-player.maximize .top-container .video-cover {
+  width: 50vw;
+  height: 50vw;
+  margin: 2rem auto 1rem auto;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+  border: 10px solid white;
+  -webkit-box-shadow: 15px 15px 20px #edf2f7, -15px -15px 20px #edf2f7;
+          box-shadow: 15px 15px 20px #edf2f7, -15px -15px 20px #edf2f7;
+}
+
+@media only screen and (min-width: 1224px) {
+  #main-player.maximize .top-container .video-cover {
+    max-width: 180px;
+    max-height: 180px;
+  }
+}
+
+@media only screen and (min-width: 1824px) {
+  #main-player.maximize .top-container .video-cover {
+    max-width: 280px;
+    max-height: 280px;
+  }
+}
+
+#main-player.maximize .top-container .video-cover img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#main-player.maximize .top-container .video-cover.spin {
+  -webkit-animation: spin 15s infinite linear;
+          animation: spin 15s infinite linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+#main-player.maximize .top-container .btn-close-player {
+  display: none;
+}
+
+#main-player.maximize .top-container .btn-toggle-maximize {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #main-player.maximize .top-container .btn-toggle-maximize svg {
+    width: 2rem;
+  }
+}
+
+#main-player.maximize .bottom-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overscroll-behavior-y: contain;
+}
+
+#main-player.maximize .bottom-container::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+}
+
+#main-player.maximize .bottom-container .video-info {
+  padding-top: 1rem;
+  text-align: center;
+  width: 90%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #main-player.maximize .bottom-container .video-info .video-title,
+  #main-player.maximize .bottom-container .video-info .video-channel-title {
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  #main-player.maximize .bottom-container .video-info .video-title {
+    font-size: 1.3rem;
+  }
+  #main-player.maximize .bottom-container .video-info .video-channel-title {
+    font-size: 1rem;
+  }
+}
+
+#main-player.maximize .bottom-container .progress-time,
+#main-player.maximize .bottom-container .progress-bar {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  width: 95%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #main-player.maximize .bottom-container .progress-time,
+  #main-player.maximize .bottom-container .progress-bar {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1224px), only screen and (min-width: 1824px) {
+  #main-player.maximize .bottom-container .progress-time,
+  #main-player.maximize .bottom-container .progress-bar {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+  #main-player.maximize .bottom-container .progress-time,
+  #main-player.maximize .bottom-container .progress-bar {
+    margin-top: 1rem;
+  }
+}
+
+#main-player.maximize .bottom-container .progress-bar {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+#main-player.maximize .bottom-container .progress-bar input {
+  width: 100%;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #main-player.maximize .bottom-container .progress-bar {
+    margin-bottom: 0rem;
+    margin-top: 0.8rem;
+  }
+}
+
+#main-player.maximize .bottom-container .player-controls {
+  width: 100%;
+  max-width: 500px;
+}
+
+#main-player.maximize .bottom-container .player-controls .controls-group {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-player.maximize .bottom-container .player-volume {
+  display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), tablet {
+  #main-player.maximize .bottom-container .player-volume {
+    display: none;
+  }
+}
+
+#main-player.maximize .bottom-container .up-next-section {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1224px), only screen and (min-width: 1824px) {
+  #main-player.maximize .bottom-container .up-next-section {
+    width: 95%;
+  }
+}
+
+#main-player.minimize {
+  margin-bottom: 60px;
+  bottom: 0px;
+  height: 60px;
+  max-height: 2000px;
+  margin-top: calc(100vh - 60px);
+  color: white;
+  background: #e91d63;
+}
+
+#main-player.minimize .btn-close-player {
+  display: block;
+  position: fixed;
+  padding: 0;
+  bottom: 77px;
+  right: 3px;
+}
+
+#main-player.minimize .btn-close-player svg {
+  width: 2rem;
+  fill: white;
+}
+
+#main-player.minimize .btn-toggle-maximize {
+  position: fixed;
+  padding-bottom: 0;
+  bottom: 65px;
+  right: 30px;
+}
+
+#main-player.minimize .btn-toggle-maximize svg {
+  width: 2rem;
+  fill: white;
+}
+
+#main-player.minimize .video-info {
+  text-align: left;
+  width: 50%;
+  position: fixed;
+  bottom: 65px;
+  left: 80px;
+  padding-left: 1rem;
+}
+
+#main-player.minimize .video-info .video-title,
+#main-player.minimize .video-info .video-channel-title {
+  overflow: hidden !important;
+  font-size: 1rem !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis;
+}
+
+#main-player.minimize .video-info .video-channel-title {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #main-player.minimize .video-info {
+    left: 60px;
+    width: 50%;
+  }
+}
+
+#main-player.minimize .video-cover,
+#main-player.minimize .progress-bar,
+#main-player.minimize .progress-time,
+#main-player.minimize .player-volume,
+#main-player.minimize .up-next-section {
+  display: none;
+}
+
+#main-player.minimize .circular-loading {
+  position: fixed;
+  bottom: 70px;
+  left: 10px;
+}
+
+#main-player.minimize .circular-loading svg {
+  color: white;
+}
+
+#main-player.minimize .controls-item-play-pause {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  padding-bottom: 0;
+}
+
+#main-player.minimize .controls-item-play-pause svg {
+  width: 3rem;
+  padding: 0;
+  fill: white;
+}
+
+#main-player.minimize .controls-item:not(.controls-item-play-pause) {
+  display: none;
+}
+/*# sourceMappingURL=MainPlayer.css.map */
